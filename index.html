@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="javascript/jquery.endlessCarousel.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+
+		var slider = jQuery('.carousel').endlessCarousel({
+			prevText: '<',
+			nextText: '>',
+		});
+
+		console.log( slider );
+
+	});
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<span class="center"></span>
+
+	<div class="carousel">
+		<img src="images/city.jpeg" width="640" height="480" alt="">
+		<img src="images/abstract.jpeg" width="520" height="480" alt="">
+		<img src="images/food.jpeg" width="800" height="480" alt="">
+		<img src="images/people.jpeg" width="640" height="480" alt="">
+		<img src="images/nightlife.jpeg" width="420" height="480" alt="">
+		<img src="images/cats.jpeg" width="400" height="480" alt="">
+	</div>
+
+</body>
+</html>
